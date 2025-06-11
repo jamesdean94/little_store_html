@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	<style>
+	
+		body {
+		background-color: #FFCB001F;
+			margin: 0;
+			font-family: "Winky Rough", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			padding: 10px;
+		}
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			
+		}
+
+		p {
+			font-size: clamp(16px, 2.5vw, 28px);
+			padding: 0 10px;
+		}
+
+		h1 {
+			font-size: clamp(24px, 6vw, 48px);
+		}
+
+		@media screen and (max-width: 1000px) {
+			.container {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+	
+		<style>
+			.audio-button {
+				background: none;
+				border: none;
+				cursor: pointer;
+				font-size: 36px;
+			}
+
+			.audio-button:hover {
+				color: #007BFF;
+			}
+  
+	</style>
+<body>
+	<section>
+		<h1>A Baby</h1>
+	</section>
+	<div class="container">
+		<button class="audio-button" onclick="playAudio()" title="Play audio">
+		🔊
+		</button>
+		<p>
+			Carol and Susan were great friends. They were in the same class at school, and they often
+			visited each other’s homes at week-ends.<br>
+			When they were both eight years old, Carol’s mother had a baby. Carol was overjoyed to have
+			a little sister and was always talking about her to Susan, who had no brothers or sisters.<br>
+			At first Susan was very interested in the new baby, but after some time she began to get rather
+			discontented with Carol’s continual talking about it. She also felt a little jealous.<br>
+			One morning when the two girls were in the school play-ground, Carol said to Susan cheerfully,<br> 
+			- ‘Do you know, Sue, my baby sister gained nearly two hundred grams in weight this week.’<br>
+			- ‘That’s not very much’, answered Susan. ‘I know a baby that gains five kilograms a day.’<br>
+			- ‘Oh, that can’t be true!’ answered Carol scornfully. <br> 
+			- ‘Whose baby is it?’<br>
+			- ‘An elephant’s’, said Susan.
+		</p>
+		
+	</div>
+	<hr>
+	<section>
+		<h1>Um Bebê</h1>
+	</section>
+	<div>
+		<p>
+			Carol e Susan eram grandes amigas. Elas estavam na mesma classe na escola e, frequentemente,
+			visitavam, cada uma, a casa da outra, nos fins de semana.<br>
+			Quando elas tinham, ambas, oito anos de idade, a mãe de Carol teve um bebê. Carol estava cheia
+			de alegria por ter uma irmãzinha e sempre conversava sobre ela para Susan, que não tinha irmãos
+			ou irmãs.<br>
+			A princípio, Susan estava muito interessada no novo bebê, mas depois de algum tempo ela começou
+			a ficar bastante descontente com a conversa contínua de Carol sobre isso. Ela também sentiu um 
+			pouco de ciúmes.<br>
+			Certa manhã, quando as duas meninas estavam no pátio da escola, Carol disse alegremente a Susan,<br> 
+			- ‘Você sabe, Sue, que minha irmãzinha ganhou quase (aproximadamente) duzentos gramas de peso esta semana’.<br>
+			- ‘Isso não é muito’, respondeu Susan. ‘Eu conheço um bebê que ganha cinco quilogramas por dia’.<br>
+			- ‘Oh, isso não pode ser verdade!’ respondeu Carol com desdém.<br>
+			- ‘De quem é o bebê?’<br>
+			- ‘De um elefante’, disse Susan.’
+	</div>
+	<div class="box" style="margin-top: 10em; font-size: 0.8rem; text-align: center;">
+	
+	<blockquote>
+		"Digno és, Senhor, de receber glória, e honra, e poder, porque tu criaste todas as coisas, e por tua vontade são e foram criadas."
+        <a href="https://bible.com/bible/212/rev.4.11.ARC">Apocalipse 4:11</a><br>
+	    <p style="font-size: 0.8rem;"><b>Autor</b>: James Dean S.C<br><b>E-mail</b>: <a href="mailto:jamesdeanxperia@gmail.com">jamesdeanxperia@gmail.com</a></p>
+	</blockquote>
+	</div>
+	
+	<audio id="butterflyAudio">
+		<source src="https://raw.githubusercontent.com/jamesdean94/litte-store/refs/heads/main/A%20Baby.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+	</audio>
+	
+	<script>
+		function playAudio() {
+			const audio = document.getElementById('butterflyAudio');
+			audio.playbackRate = 0.75;
+			if (audio.paused) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+  </script>
+	
+</body>
+</html>
