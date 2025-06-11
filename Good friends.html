@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	<style>
+	
+		body {
+		background-color: #FFCB001F;
+			margin: 0;
+			font-family: "Winky Rough", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			padding: 10px;
+		}
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			
+		}
+
+		p {
+			font-size: clamp(16px, 2.5vw, 28px);
+			padding: 0 10px;
+		}
+
+		h1 {
+			font-size: clamp(24px, 6vw, 48px);
+		}
+
+		@media screen and (max-width: 1000px) {
+			.container {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+	
+		<style>
+			.audio-button {
+				background: none;
+				border: none;
+				cursor: pointer;
+				font-size: 36px;
+			}
+
+			.audio-button:hover {
+				color: #007BFF;
+			}
+  
+	</style>
+<body>
+	<section>
+		<h1>Good Friends</h1>
+	</section>
+	<div class="container">
+		<button class="audio-button" onclick="playAudio()" title="Play audio">
+		🔊
+		</button>
+		<p>
+			&nbsp;&nbsp;&nbsp;Jack and Mando are good friends, but they live in different places. 
+			Jack lives in an apartment in a big city. He takes the bus to school
+			every day. On Fridays, Jack likes to go to the zoo which is near his
+			apartment. If he wants  to buy anything, he walks across the street 
+			to the supermarket.<br>
+			&nbsp;&nbsp;&nbsp;Mando lives in a small house in the country.
+			He goes to school in his father’s truck. Mando doesn’t live near a 
+			zoo, but he sees animals in the farm every day. If he wants to buy
+			anything, he has to ride his bike to the nearest shop.
+		</p>
+		
+	</div>
+	<hr>
+	<section>
+		<h1>Bons Amigos</h1>
+	</section>
+	<div>
+		<p>
+			&nbsp;&nbsp;&nbsp;Jack e Mando são bons amigos, mas eles moram em diferentes lugares.
+			Jack mora em um apartamento em uma grande  cidade. Ele pega o ônibus
+			para escola todos os dias. Às sextas-feiras, Jack gosta de ir ao 
+			zoológico que é próximo do apartamento dele. Se ele quiser comprar 
+			alguma coisa, ele atravessa a rua ao supermercado.<br>
+			&nbsp;&nbsp;&nbsp;Mando mora em uma pequena casa no país.
+			Ele vai à escola na caminhonete do pai dele. Mando não 
+			mora próximo de um zoológico, mas ele vê animais na fazenda todos 
+			os dias. Se ele quiser comprar alguma coisa, ele tem que montar a 
+			bicicleta dele à loja mais próxima.
+		</p>
+	</div>
+	<div class="box" style="margin-top: 10em; font-size: 0.8rem; text-align: center;">
+	
+	<blockquote>
+		"Digno és, Senhor, de receber glória, e honra, e poder, porque tu criaste todas as coisas, e por tua vontade são e foram criadas."
+        <a href="https://bible.com/bible/212/rev.4.11.ARC">Apocalipse 4:11</a><br>
+	    <p style="font-size: 0.8rem;"><b>Autor</b>: James Dean S.C<br><b>E-mail</b>: <a href="mailto:jamesdeanxperia@gmail.com">jamesdeanxperia@gmail.com</a></p>
+	</blockquote>
+	</div>
+	<audio id="butterflyAudio">
+		<source src="https://raw.githubusercontent.com/jamesdean94/litte-store/main/Good%20Friends.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+	</audio>
+	
+	<script>
+		function playAudio() {
+			const audio = document.getElementById('butterflyAudio');
+			audio.playbackRate = 0.75;
+			if (audio.paused) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+  </script>
+	
+</body>
+</html>
