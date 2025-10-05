@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	<style>
+	
+		body {
+		background-color: #FFCB001F;
+			margin: 0;
+			font-family: "Winky Rough", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			padding: 10px;
+		}
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			
+		}
+
+		p {
+			font-size: clamp(16px, 2.5vw, 28px);
+			padding: 0 10px;
+		}
+
+		h1 {
+			font-size: clamp(24px, 6vw, 48px);
+		}
+
+		@media screen and (max-width: 1000px) {
+			.container {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+	
+		<style>
+			.audio-button {
+				background: none;
+				border: none;
+				cursor: pointer;
+				font-size: 36px;
+			}
+
+			.audio-button:hover {
+				color: #007BFF;
+			}
+  
+	</style>
+<body>
+	<section>
+		<h1>My Wonderful Family</h1>
+	</section>
+	<div class="container">
+		<button class="audio-button" onclick="playAudio()" title="Play audio">
+		🔊
+		</button>
+		<p>
+			&nbsp;&nbsp;&nbsp;I live in a house near the mountains. I have two brothers and one sister, and I was born last. 
+			My father teaches mathematics, and my mother is a nurse at a big hospital. My brothers are very smart and work 
+			hard in school. My sister is a nervous girl, but she is very kind. My grandmother also lives with us. She came 
+			from Italy when I was two years old. She has grown old, but she is still very strong. She cooks the best food!
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;My family is very important to me. We do lots of things together. My brothers and I like to go on
+			long walks in the mountains. My sister likes to cook with my grandmother. On the weekends we all play board games 
+			together. We laugh and always have a good time. I love my family very much.
+		</p>
+		
+	</div>
+	<hr>
+	<section>
+		<h1>Uma visita a um Dentista</h1>
+	</section>
+	<div>
+		<p>
+			&nbsp;&nbsp;&nbsp;Eu moro em uma casa perto das montanhas. Tenho dois irmãos e uma irmã, e eu nasci por último. 
+			Meu pai ensina matemática e minha mãe é enfermeira em um grande hospital. Meus irmãos são muito inteligentes e
+			se dedicam bastante na escola. Minha irmã é uma garota nervosa, mas ela é muito gentil. Minha avó também mora 
+			conosco. Ela veio da Itália quando eu tinha dois anos de idade. Ela envelheceu, mas ainda é muito forte. Ela 
+			cozinha a melhor comida!
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;Minha família é muito importante para mim. Nós fazemos muitas coisas juntos. Meus irmãos e eu
+			gostamos de fazer longas caminhadas nas montanhas. Minha irmã gosta de cozinhar com minha avó. Nos finais de 
+			semana todos nós jogamos jogos de tabuleiro juntos. Nós rimos e sempre nos divertimos muito. Eu amo muito a minha
+			família.
+		</p>
+	</div>
+	<div class="box" style="margin-top: 10em; font-size: 0.8rem; text-align: center;">
+	
+	<blockquote>
+		"Digno és, Senhor, de receber glória, e honra, e poder, porque tu criaste todas as coisas, e por tua vontade são e foram criadas."
+        <a href="https://bible.com/bible/212/rev.4.11.ARC">Apocalipse 4:11</a><br>
+	    <p style="font-size: 0.8rem;"><b>Autor</b>: James Dean S.C<br><b>E-mail</b>: <a href="mailto:jamesdeanxperia@gmail.com">jamesdeanxperia@gmail.com</a></p>
+	</blockquote>
+	</div>
+	<audio id="butterflyAudio">
+		<source src="https://raw.githubusercontent.com/jamesdean94/litte-store/main/My%20wonderful%20family.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+	</audio>
+	<script>
+		function playAudio() {
+			const audio = document.getElementById('butterflyAudio');
+			audio.playbackRate = 0.75;
+			if (audio.paused) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+  </script>
+	
+</body>
+</html>
