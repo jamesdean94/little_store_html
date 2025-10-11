@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	<style>
+	
+		body {
+		background-color: #FFCB001F;
+			margin: 0;
+			font-family: "Winky Rough", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			padding: 10px;
+		}
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			
+		}
+
+		p {
+			font-size: clamp(16px, 2.5vw, 28px);
+			padding: 0 10px;
+		}
+
+		h1 {
+			font-size: clamp(24px, 6vw, 48px);
+		}
+
+		@media screen and (max-width: 1000px) {
+			.container {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+	
+		<style>
+			.audio-button {
+				background: none;
+				border: none;
+				cursor: pointer;
+				font-size: 36px;
+			}
+
+			.audio-button:hover {
+				color: #007BFF;
+			}
+  
+	</style>
+<body>
+	<section>
+		<h1>My day</h1>
+	</section>
+	<div class="container">
+		<button class="audio-button" onclick="playAudio()" title="Play audio">
+		🔊
+		</button>
+		<p>
+			&nbsp;&nbsp;&nbsp;First, I wake up. Then, I get dressed. I walk to school. I do not ride a bike. I do not ride
+			the bus. I like to go to school. It rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;I play outside. I like to play. I read a book. I like to read books. I walk home. I do not 
+			like walking home. My mother cooks soup for dinner. The soup is hot. Then, I go to bed. I do not like
+			to go to bed.
+		</p>
+		
+	</div>
+	<hr>
+	<section>
+		<h1>Meu dia</h1>
+	</section>
+	<div>
+		<p>
+			&nbsp;&nbsp;&nbsp;Primeiro, eu acordo. Depois, eu me visto. Eu caminho até a escola. Eu não ando de bicicleta. 
+			Eu não pego o ônibus. Eu gosto de ir para a escola. Chove. Eu não gosto de chuva. Eu almoço. Eu como um 
+			sanduíche e uma maçã.
+		</p>
+		<p>
+			&nbsp;&nbsp;&nbsp;Eu brinco lá fora. Eu gosto de brincar. Eu leio um livro. Eu gosto de ler livros. Eu volto para
+			casa a pé. Eu não gosto de voltar para casa a pé. Minha mãe faz sopa para o jantar. A sopa está quente. Depois, eu 
+			vou para a cama. Eu não gosto de ir para a cama.
+		</p>
+	</div>
+	<div class="box" style="margin-top: 10em; font-size: 0.8rem; text-align: center;">
+	
+	<blockquote>
+		"Digno és, Senhor, de receber glória, e honra, e poder, porque tu criaste todas as coisas, e por tua vontade são e foram criadas."
+        <a href="https://bible.com/bible/212/rev.4.11.ARC">Apocalipse 4:11</a><br>
+	    <p style="font-size: 0.8rem;"><b>Autor</b>: James Dean S.C<br><b>E-mail</b>: <a href="mailto:jamesdeanxperia@gmail.com">jamesdeanxperia@gmail.com</a></p>
+	</blockquote>
+	</div>
+	<audio id="butterflyAudio">
+		<source src="https://raw.githubusercontent.com/jamesdean94/litte-store/main/My%20day.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+	</audio>
+	<script>
+		function playAudio() {
+			const audio = document.getElementById('butterflyAudio');
+			audio.playbackRate = 0.75;
+			if (audio.paused) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+  </script>
+	
+</body>
+</html>
