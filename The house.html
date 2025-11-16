@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	<style>
+	
+		body {
+		background-color: #FFCB001F;
+			margin: 0;
+			font-family: "Winky Rough", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			padding: 10px;
+		}
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			
+		}
+
+		p {
+			font-size: clamp(16px, 2.5vw, 28px);
+			padding: 0 10px;
+		}
+
+		h1 {
+			font-size: clamp(24px, 6vw, 48px);
+		}
+
+		@media screen and (max-width: 1000px) {
+			.container {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+	
+		<style>
+			.audio-button {
+				background: none;
+				border: none;
+				cursor: pointer;
+				font-size: 36px;
+			}
+
+			.audio-button:hover {
+				color: #007BFF;
+			}
+  
+	</style>
+<body>
+	<section>
+		<h1>The House</h1>
+	</section>
+	<div class="container">
+		<button class="audio-button" onclick="playAudio()" title="Play audio">
+		🔊
+		</button>
+		<p style="margin: 0;">
+			&nbsp;&nbsp;&nbsp;Mr. and Mrs. Smith have one son and one daughter. The son's name is John. The daughter's name is Sarah.<br>
+		</p>
+		<p style="margin: 0;">
+			&nbsp;&nbsp;&nbsp;The Smiths live in a house. They have a living room. They watch TV in the living room. The father cooks food
+			in the kitchen. They eat in the dining room. The house has two bedrooms. They sleep in the bedrooms. They 
+			keep their clothes in the closet. There is one bathroom. They brush their teeth in the bathroom.<br>
+			</p>
+		
+			<p style="margin: 0;">&nbsp;&nbsp;&nbsp;The house has a garden. John and Sarah play in the garden. They have a dog. John and 
+				Sarah like to play with the dog.<br></p>
+		
+	</div>
+	<hr>
+	<section>
+		<h1>A casa</h1>
+	</section>
+	<div>
+		<p style="margin: 0;">
+			&nbsp;&nbsp;&nbsp;O Sr. e a Sra. <i>Smith</i> têm um filho e uma filha. O nome do filho é <i>John</i>. O nome da filha é <i>Sarah</i>.<br>
+		</p>
+		<p style="margin: 0;">
+			&nbsp;&nbsp;&nbsp;Os <i>Smiths</i> moram em uma casa. Eles têm uma sala de estar. Eles assistem à TV na sala de estar. O pai 
+			prepara a comida na cozinha. Eles comem na sala de jantar. A casa tem dois quartos. Eles dormem nos quartos. Eles guardam (matêm)
+			suas roupas no armário. Há um banheiro. Eles escovam os dentes no banheiro.<br>
+			</p>
+		
+			<p style="margin: 0;">&nbsp;&nbsp;&nbsp;A casa tem um jardim. <i>John</i> e <i>Sarah</i> brincam no jardim. Eles têm um cachorro.
+				<i>John</i> e <i>Sarah</i> gostam de brincar com o cachorro.<br></p>
+	</div>
+	<div class="box" style="margin-top: 10em; font-size: 0.8rem; text-align: center;">
+	
+	<blockquote>
+		"Digno és, Senhor, de receber glória, e honra, e poder, porque tu criaste todas as coisas, e por tua vontade são e foram criadas."
+        <a href="https://bible.com/bible/212/rev.4.11.ARC">Apocalipse 4:11</a><br>
+	    <p style="font-size: 0.8rem;"><b>Autor</b>: James Dean S.C<br><b>E-mail</b>: <a href="mailto:jamesdeanxperia@gmail.com">jamesdeanxperia@gmail.com</a></p>
+	</blockquote>
+	</div>
+	<audio id="butterflyAudio">
+		<source src="https://raw.githubusercontent.com/jamesdean94/litte-store/main/The%20house.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+	</audio>
+	
+	<script>
+		function playAudio() {
+			const audio = document.getElementById('butterflyAudio');
+			audio.playbackRate = 0.75;
+			if (audio.paused) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+  </script>
+	
+</body>
+</html>
